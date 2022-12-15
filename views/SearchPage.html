@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎭 Showtime 🎭 - הצגות</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon-96x96.png">
+    <!-- <link rel="stylesheet" href="SearchPage.css"> -->
+    <link rel="stylesheet" href="../static/css/Showtime.css">
+
+    <script src="../static/js/loadDb.js"></script>
+    <script src="../static/js/renderSite.js" defer></script>
+    <script src="../static/js/SearchPage.js" defer></script>
+</head>
+<header>
+    <nav id="navbar_container">
+
+    </nav>
+</header>
+
+<body>
+    <!--< מסך 4>-->
+    <div class="search-page-container">
+        <div class="search-grid-item"><img src="../static/images/Startsearch1-removebg-preview.png" class="search-page-head-image"
+                alt="בואו נתחיל בחיפוש"></div>
+
+        <div class="search-grid-item form-row-grid-item">
+            <form action="" method="get" class="myW-form search-form">
+                <div>
+                    קטגוריה:
+                    <input type="קטגוריה" id="categoryTextInput" placeholder="דרמה">
+                </div>
+
+                <div class="OR">
+                    <p> או </p>
+                </div>
+
+                <div>
+                    שם ההצגה:
+                    <input type="שם ההצגה" id="nameTextInput" placeholder="קזבלן">
+                </div>
+            </form>
+        </div>
+        <div class="search-grid-item">
+            <a href="#" class="recommended-button" id="recommendedBtn">🤗 מומלץ בשבילי</a>
+        </div>
+        <div class="search-grid-item">
+            <a href="#" class="dark-button" id="searchBtn"> חפש</a>
+        </div>
+        <div class="search-grid-item flip-box-inner flip-box">
+            <div class="flip-box-front">
+                <img src="../static/images/Logo_Web.png" class="logo-searchpage" alt="This is an image of logo">
+            </div>
+        </div>
+        <div class="containerbuttons-single">
+            <div><a class="light-btn" href="LandingPage.html"> התנתק</a></div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

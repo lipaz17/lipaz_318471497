@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎭 Showtime 🎭 - הצגות</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon-96x96.png">
+    <!-- <link rel="stylesheet" href="WriteReviewPage.css"> -->
+    <link rel="stylesheet" href="../static/css/Showtime.css">
+
+    <script src="../static/js/loadDb.js"></script>
+    <script src="../static/js/renderSite.js" defer></script>
+    <script src="../static/js/WriteReviewPage.js" defer></script>
+</head>
+<header>
+    <nav id="navbar_container">
+    </nav>
+</header>
+<body class="pinkwhite-body">
+
+<!--< מסך 7>-->
+
+<div class="write-review-logo-container">
+    <img src="../static/images/Logo_Web.png" alt="This is an image of logo" class="write-review-logo">
+</div>
+<h1 id="title" class="write-review-title"></h1>
+
+<div class="container-write-review">
+    <div class="box-write-review">
+        <p class="upload-review-title"> העלאת ביקורת: </p>
+        <span id="select-container"></span>
+       
+        <p1></p1>
+        <br>
+        <form action="" method="get" class="write-review-form">
+            <br>
+            
+            דירוג:<br>
+            <input type="number" class="write-review-rating" id="ratingInput" max="5" min="0"
+                   placeholder="">
+            <br>
+            <br>
+            כותרת:
+            <input type="כותרת" id="titleInput"
+                   placeholder="">
+            <br>
+            <div id="FreeText">
+                <p> מלל חופשי:</p>
+                <input type="טקסט הפסקה שלך" id="contentInput"
+                       placeholder="טקסט הפסקה שלך">
+            </div>
+            <br>
+        </form>
+    </div>
+    <div class="box-image-write-review">
+        <img class="write-review-image" src="../static/images/תמונת_ביקורות-removebg-preview.png" alt="This is an image of like">
+    </div>
+</div>
+<div class="containerbuttons">
+    <div class="item1">
+
+        <a href="ReviewListPage.html" class="dark-button" id="backBtn"> חזור</a>
+    </div>
+    <div class="item2">
+
+        <a href="OnReviewSubmittedPage.html" class="dark-button" id="addReviewBtn"> הוספה</a>
+    </div>
+    <div class="item3">
+
+        <a href="LandingPage.html" id="logoutBtn" class="dark-button"> התנתק</a>
+    </div>
+
+</div>
+</body>
+
+</html>

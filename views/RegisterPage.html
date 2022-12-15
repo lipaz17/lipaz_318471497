@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎭 Showtime 🎭 - הצגות</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon-96x96.png">
+    <link rel="stylesheet" href="../static/css/Showtime.css">
+    <script src="../static/js/loadDb.js"></script>
+    <script src="../static/js/renderSite.js" defer> </script>
+    <script src="../static/js/RegisterPage.js" defer></script>
+</head>
+<header>
+    <nav id="navbar_container">
+    </nav>
+</header>
+
+<!--< מסך 3>-->
+
+<body class="whitepink-body">
+    <div class="container-register">
+        <div class="box-register">
+            <div>
+                <h2> יצירת משתמש חדש </h2>
+            <p1>כבר רשום?<a href="LoginPage.html" class="login-label"> התחבר</a></p1>
+            <form action="" method="get" class="register-form">
+                <br>
+                שם:
+                <input type="שם" required id="nameInput" placeholder="Jiara Martins">
+                <br>
+                <br>
+
+                מייל:
+                <input type="מייל" required id="emailInput" placeholder="hello@reallygreatsite.com">
+                <br>
+                <br>
+
+                סיסמא:
+                <input type="סיסמא" required id="passwordInput" placeholder="*******">
+                <br>
+                <br>
+                תאריך לידה:
+                <input class="date-picker" required type="date" id="dateInput" name="trip-start" value="1990-01-01"
+                    min="1950-01-01" max="2018-12-31">
+                <br>
+                <br>
+                <div class="register-button-container">
+                    <a href="SearchPage.html" type="button">
+                        <input type="submit" class="dark-button half-button" id="registerBtn" value="הרשם">
+                    </a>
+                </div>
+            </form>
+            </div>
+            
+        </div>
+        <div class="image-box-register">
+            <img src="../static/images/Logo_Web.png" class="image-logo-login" alt="This is an image of logo">
+        </div>
+    </div>
+</body>
+
+</html>
