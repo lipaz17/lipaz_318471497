@@ -1,0 +1,47 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    // <link rel="stylesheet" href="WriteReviewPage.css">
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='../static/js/WriteReviewPage.js', defer='')
+  body.pinkwhite-body
+    header
+      nav#navbar_container
+    .write-review-logo-container
+      img.write-review-logo(src='../static/images/Logo_Web.png', alt='This is an image of logo')
+    h1#title.write-review-title
+    .container-write-review
+      .box-write-review
+        p.upload-review-title  &#x5D4;&#x5E2;&#x5DC;&#x5D0;&#x5EA; &#x5D1;&#x5D9;&#x5E7;&#x5D5;&#x5E8;&#x5EA;: 
+        span#select-container
+        p1
+        br
+        form.write-review-form(action='/api/addreview', method='post')
+          br
+          br
+          span &#x5D3;&#x5D9;&#x5E8;&#x5D5;&#x5D2;:
+          input#ratingInput.write-review-rating(type='number', max='5', min='0', placeholder='')
+          br
+          br
+          span &#x5DB;&#x5D5;&#x5EA;&#x5E8;&#x5EA;:
+          input#titleInput(type='כותרת', placeholder='')
+          br
+          #FreeText
+            p  &#x5DE;&#x5DC;&#x5DC; &#x5D7;&#x5D5;&#x5E4;&#x5E9;&#x5D9;:
+            input#contentInput(type='טקסט הפסקה שלך', placeholder='טקסט הפסקה שלך')
+          br
+      .box-image-write-review
+        img.write-review-image(src='../static/images/תמונת_ביקורות-removebg-preview.png', alt='This is an image of like')
+    .containerbuttons
+      .item1
+        a#backBtn.dark-button(href='ReviewListPage')  &#x5D7;&#x5D6;&#x5D5;&#x5E8;
+      .item2
+        a#addReviewBtn.dark-button(href='OnReviewSubmittedPage')  &#x5D4;&#x5D5;&#x5E1;&#x5E4;&#x5D4;
+      .item3
+        a#logoutBtn.dark-button(href='LandingPage')  &#x5D4;&#x5EA;&#x5E0;&#x5EA;&#x5E7;

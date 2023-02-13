@@ -1,0 +1,39 @@
+modules:
+express,mysql,pug,bodyParser,path
+
+API Routes:
+    USERS Table:
+    /api/createUsersTable
+    /api/insertIntoUsersTable
+    /api/selectUsersTable
+
+    REVIEWS Table:
+    /api/createReviewsTable
+    /api/insertIntoReviewsTable
+    /api/selectReviewsTable
+
+    SHOW Table:
+    /api/createShowsTable
+    /api/insertIntoShowsTable
+    /api/selectShowsTable
+
+    CONTACT_US Table:
+    /api/createContactUsTable
+    /api/insertIntoContactUsTable
+    /api/selectContactUsTable
+
+    AVERAGE_REVIEWS Table:
+    /api/createAvgReviewsTable
+    /api/insertIntoAvgReviewsTable
+    /api/selectAvgReviewsTable
+
+    All Tables:
+    /api/DropTables
+
+
+SQL Tables:
+CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), dateofbirth DATE)
+CREATE TABLE IF NOT EXISTS shows (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), category VARCHAR(255), minage INT, maxage INT, imageurl VARCHAR(255))
+CREATE TABLE IF NOT EXISTS reviews (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), content VARCHAR(255), rating INT, showid INT, userid INT)
+CREATE TABLE IF NOT EXISTS contactus (id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255), message VARCHAR(255))
+CREATE TABLE IF NOT EXISTS avgreviews (id INT AUTO_INCREMENT PRIMARY KEY, showid INT, sumrating INT, countrating INT)

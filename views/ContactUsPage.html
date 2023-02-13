@@ -26,8 +26,9 @@
             <h2 class="h2-contactus"> .נשמח לשמוע על מענה\ בקשה\ שאלה שנוגעת לאתרנו </h2>
             <p class="p-contactus"> הכנס תגובתך:</p>
             <br>
-            <form action="" method="get" class="contactus-form">
+            <form action="/api/addcontactusmessage" method="get" class="contactus-form">
                 <input type="טקסט הפסקה שלך"  placeholder="טקסט הפסקה שלך" id="messageInput" />
+                <input type="submit" class="dark-button" id="sendBtn" value="שלח">
             </form>
         </div>
 
@@ -36,12 +37,9 @@
         </div>
     </div>
 
-    <div class="containerbuttons">
+    <div class="containerbuttons-2">
         <div class="item1">
             <a href="#" class="dark-button" id="backBtn"> חזור</a>
-        </div>
-        <div class="item2">
-            <a href="#" class="dark-button" id="sendBtn"> שלח</a>
         </div>
         <div class="item3">
             <a href="#" class="dark-button"> התנתק</a>

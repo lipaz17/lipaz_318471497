@@ -1,0 +1,32 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='../static/js/LoginPage.js', defer='')
+  body.whitepink-body
+    header
+      nav#navbar_container
+    .container-login
+      .box-login
+        h2  &#x5D4;&#x5EA;&#x5D7;&#x5D1;&#x5E8;&#x5D5;&#x5EA; 
+        p1  &#x5D4;&#x5EA;&#x5D7;&#x5D1;&#x5E8; &#x5DB;&#x5D3;&#x5D9; &#x5DC;&#x5D4;&#x5EA;&#x5E7;&#x5D3;&#x5DD;
+        form.login-form(action='/api/loginuser', method='get')
+          br
+          input#emailInput(type='מייל', required='', placeholder='hello@reallygreatsite.com')
+          br
+          br
+          br
+          input#passwordInput(type='סיסמא', required='', placeholder='*******')
+          br
+          br
+          .login-button-wraper
+            a(href='SearchPage')
+              input#loginBtn.dark-button.half-button(type='submit', value='התחבר')
+      .login-image-box
+        img.image-logo-login(src='../static/images/Logo_Web.png', alt='This is an image of logo')

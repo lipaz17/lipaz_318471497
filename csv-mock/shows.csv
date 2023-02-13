@@ -1,0 +1,16 @@
+﻿name,category,minage,maxage,imageurl
+זה אני,מחזמר,10,30,/static/images/shows/This_is_me_Poster.jpg
+אפס ביחסי אנוש,קומדיה,10,30,/static/images/shows/Zero_in_human_relations.jpg
+בוסטן ספרדי,דרמה,10,30,/static/images/shows/Spanish_orchard.jpg
+לעבור את הקיר,קומדיה,20,40,/static/images/shows/Laavor_Et_HaKir.jpg
+הלהקה,מחזמר,20,40,/static/images/shows/The_band.jpg
+ינטל,דרמה,20,40,/static/images/shows/Will_take.jpg
+מלאכת החיים,דרמה,30,50,/static/images/shows/The_craft_of_life.jpg
+הדוקטור,אקשן,30,50,/static/images/shows/The_doctor.jpg
+זרים מושלמים ,דרמה רומנטית,30,50,/static/images/shows/Perfect_strangers.jpg
+מניין נשים,דרמה,50,120,/static/images/shows/Number_of_women.jpg
+מעבר לדלת ,מתח,50,120,/static/images/shows/Beyond_the_door.jpg
+השנה היפה בחיי,אקשן,50,120,/static/images/shows/The_best_year_of_my_life.jpg
+חפץ,מתח,10,120,/static/images/shows/The_object.jpg
+המודעה,אקשן,10,120,/static/images/shows/The_ad.jpg
+טוק-טוק,קומדיה,10,120,/static/images/shows/Toc_Toc.jpg

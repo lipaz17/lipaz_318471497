@@ -33,15 +33,17 @@
        
         <p1></p1>
         <br>
-        <form action="" method="get" class="write-review-form">
+        <form action="/api/addreview" method="post" class="write-review-form">
             <br>
             
-            דירוג:<br>
+            <br>
+            <span>דירוג:</span>
+
             <input type="number" class="write-review-rating" id="ratingInput" max="5" min="0"
                    placeholder="">
             <br>
-            <br>
-            כותרת:
+            <br/>
+            <span>כותרת:</span>
             <input type="כותרת" id="titleInput"
                    placeholder="">
             <br>
@@ -60,15 +62,15 @@
 <div class="containerbuttons">
     <div class="item1">
 
-        <a href="ReviewListPage.html" class="dark-button" id="backBtn"> חזור</a>
+        <a href="ReviewListPage" class="dark-button" id="backBtn"> חזור</a>
     </div>
     <div class="item2">
 
-        <a href="OnReviewSubmittedPage.html" class="dark-button" id="addReviewBtn"> הוספה</a>
+        <a href="OnReviewSubmittedPage" class="dark-button" id="addReviewBtn"> הוספה</a>
     </div>
     <div class="item3">
 
-        <a href="LandingPage.html" id="logoutBtn" class="dark-button"> התנתק</a>
+        <a href="LandingPage" id="logoutBtn" class="dark-button"> התנתק</a>
     </div>
 
 </div>

@@ -1,0 +1,31 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    // <link rel="stylesheet" href="ContactUsPage.css">
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='../static/js/ContactUsPage.js', defer='')
+  body.whitepink-body
+    header
+      nav#navbar_container
+    .container-contactus
+      .box-contactus
+        h1.h1-contactus  &#x5D3;&#x5E2;&#x5EA;&#x5DA; &#x5D7;&#x5E9;&#x5D5;&#x5D1;&#x5D4; &#x5DC;&#x5E0;&#x5D5;! 
+        h2.h2-contactus  .&#x5E0;&#x5E9;&#x5DE;&#x5D7; &#x5DC;&#x5E9;&#x5DE;&#x5D5;&#x5E2; &#x5E2;&#x5DC; &#x5DE;&#x5E2;&#x5E0;&#x5D4;\ &#x5D1;&#x5E7;&#x5E9;&#x5D4;\ &#x5E9;&#x5D0;&#x5DC;&#x5D4; &#x5E9;&#x5E0;&#x5D5;&#x5D2;&#x5E2;&#x5EA; &#x5DC;&#x5D0;&#x5EA;&#x5E8;&#x5E0;&#x5D5; 
+        p.p-contactus  &#x5D4;&#x5DB;&#x5E0;&#x5E1; &#x5EA;&#x5D2;&#x5D5;&#x5D1;&#x5EA;&#x5DA;:
+        br
+        form.contactus-form(action='/api/addcontactusmessage', method='get')
+          input#messageInput(type='טקסט הפסקה שלך', placeholder='טקסט הפסקה שלך')
+          input#sendBtn.dark-button(type='submit', value='שלח')
+      .image-box-contactus
+        img.image-logo(src='../static/images/Logo_Web.png', alt='This is an image of logo')
+    .containerbuttons-2
+      .item1
+        a#backBtn.dark-button(href='#')  &#x5D7;&#x5D6;&#x5D5;&#x5E8;
+      .item3
+        a.dark-button(href='#')  &#x5D4;&#x5EA;&#x5E0;&#x5EA;&#x5E7;

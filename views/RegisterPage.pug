@@ -1,0 +1,41 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='../static/js/RegisterPage.js', defer='')
+  body.whitepink-body
+    header
+      nav#navbar_container
+    // < מסך 3>
+    .container-register
+      .box-register
+        div
+          h2  &#x5D9;&#x5E6;&#x5D9;&#x5E8;&#x5EA; &#x5DE;&#x5E9;&#x5EA;&#x5DE;&#x5E9; &#x5D7;&#x5D3;&#x5E9; 
+          p1
+            | &#x5DB;&#x5D1;&#x5E8; &#x5E8;&#x5E9;&#x5D5;&#x5DD;?
+            a.login-label(href='LoginPage')  &#x5D4;&#x5EA;&#x5D7;&#x5D1;&#x5E8;
+          form.register-form(action='/api/createnewuser', method='post')
+            br
+            input#nameInput(type='שם', required='', placeholder='Jiara Martins')
+            br
+            br
+            input#emailInput(type='מייל', required='', placeholder='hello@reallygreatsite.com')
+            br
+            br
+            input#passwordInput(type='סיסמא', required='', placeholder='*******')
+            br
+            br
+            input#dateInput.date-picker(required='', type='date', name='trip-start', value='1990-01-01', min='1950-01-01', max='2018-12-31')
+            br
+            br
+            .register-button-container
+              a(href='SearchPage', type='button')
+                input#registerBtn.dark-button.half-button(type='submit', value='הרשם')
+      .image-box-register
+        img.image-logo-login(src='../static/images/Logo_Web.png', alt='This is an image of logo')

@@ -1,0 +1,27 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='OnReviewSubmittedPage.js', defer='')
+  body.whitepink-body
+    header
+      nav#navbar_container
+    // < מסך 8>
+    .container-review-submitted
+      .box-review-submitted
+        h1  &#x5EA;&#x5D2;&#x5D5;&#x5D1;&#x5EA;&#x5DA; &#x5E0;&#x5E9;&#x5DE;&#x5E8;&#x5D4;! 
+        h2 &#x5EA;&#x5D5;&#x5D3;&#x5D4; &#x5E2;&#x5DC; &#x5E9;&#x5D9;&#x5EA;&#x5D5;&#x5E3; &#x5D4;&#x5E4;&#x5E2;&#x5D5;&#x5DC;&#x5D4;
+        p1
+      .box-image-review-submitted
+        img(src='../images/Logo_Web.png', alt='This is an image of logo')
+    .containerbuttons-2
+      .item1
+        a.dark-button(href='LandingPage#')  &#x5D4;&#x5EA;&#x5E0;&#x5EA;&#x5E7;
+      .item2
+        a.dark-button(href='WriteReviewPage')  &#x5D7;&#x5D6;&#x5D5;&#x5E8;

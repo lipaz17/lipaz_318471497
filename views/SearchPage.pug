@@ -1,0 +1,39 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    // <link rel="stylesheet" href="SearchPage.css">
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='../static/js/SearchPage.js', defer='')
+  body
+    header
+      nav#navbar_container
+    // < מסך 4>
+    .search-page-container
+      .search-grid-item
+        img.search-page-head-image(src='../static/images/Startsearch1-removebg-preview.png', alt='בואו נתחיל בחיפוש')
+      .search-grid-item.form-row-grid-item
+        form.myW-form.search-form(action='/api/getshows', method='get')
+          div
+            | &#x5E7;&#x5D8;&#x5D2;&#x5D5;&#x5E8;&#x5D9;&#x5D4;:
+            input#categoryTextInput(type='קטגוריה', placeholder='דרמה')
+          .OR
+            p  &#x5D0;&#x5D5; 
+          div
+            | &#x5E9;&#x5DD; &#x5D4;&#x5D4;&#x5E6;&#x5D2;&#x5D4;:
+            input#nameTextInput(type='שם ההצגה', placeholder='קזבלן')
+      .search-grid-item
+        a#recommendedBtn.recommended-button(href='#') &#x1F917; &#x5DE;&#x5D5;&#x5DE;&#x5DC;&#x5E5; &#x5D1;&#x5E9;&#x5D1;&#x5D9;&#x5DC;&#x5D9;
+      .search-grid-item
+        a#searchBtn.dark-button(href='#')  &#x5D7;&#x5E4;&#x5E9;
+      .search-grid-item.flip-box-inner.flip-box
+        .flip-box-front
+          img.logo-searchpage(src='../static/images/Logo_Web.png', alt='This is an image of logo')
+      .containerbuttons-single
+        div
+          a.light-btn(href='LandingPage')  &#x5D4;&#x5EA;&#x5E0;&#x5EA;&#x5E7;

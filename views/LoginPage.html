@@ -3,14 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>🎭 Showtime 🎭 - הצגות</title>
     <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicon-96x96.png">
-
     <link rel="stylesheet" href="../static/css/Showtime.css">
-
     <script src="../static/js/loadDb.js"></script>
     <script src="../static/js/renderSite.js" defer></script>
     <script src="../static/js/LoginPage.js" defer></script>
@@ -19,15 +15,14 @@
     <nav id="navbar_container">
     </nav>
 </header>
-<!--< מסך 2>-->
 
 <body class="whitepink-body">
     <div class="container-login">
         <div class="box-login">
             <h2> התחברות </h2>
             <p1> התחבר כדי להתקדם</p1>
-            <form action="" method="get" class="login-form">
-                <br>
+            <form action="/api/loginuser" method="get" class="login-form">
+                <br />
                 מייל:
                 <input type="מייל" required id="emailInput" placeholder="hello@reallygreatsite.com">
                 <br />
@@ -40,8 +35,8 @@
                 <br />
                 <br />
                 <div class="login-button-wraper">
-                    <a href="SearchPage.html">
-                        <input type="button" class="dark-button half-button" id="loginBtn" value="התחבר">
+                    <a href="SearchPage">
+                        <input type="submit" class="dark-button half-button" id="loginBtn" value="התחבר">
                     </a>
                 </div>
             </form>
@@ -51,11 +46,5 @@
             <img src="../static/images/Logo_Web.png" class="image-logo-login" alt="This is an image of logo">
         </div>
     </div>
-
-
- 
 </body>
-
-
-
 </html>

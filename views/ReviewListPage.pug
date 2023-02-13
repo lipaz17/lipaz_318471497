@@ -1,0 +1,32 @@
+doctype html
+html(lang='he')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title &#x1F3AD; Showtime &#x1F3AD; - &#x5D4;&#x5E6;&#x5D2;&#x5D5;&#x5EA;
+    link(rel='icon', type='image/png', sizes='96x96', href='../static/images/favicon-96x96.png')
+    // <link rel="stylesheet" href="ReviewListPage.css">
+    link(rel='stylesheet', href='../static/css/Showtime.css')
+    script(src='../static/js/loadDb.js')
+    script(src='../static/js/renderSite.js', defer='')
+    script(src='../static/js/ReviewListPage.js', defer='')
+  body.pinkwhite-body
+    header
+      nav#navbar_container
+    // < מסך 6>
+    .list-review-logo-container
+      img.list-review-logo(src='../static/images/Logo_Web.png', alt='This is an image of logo')
+    h1#title.title-reviewlist
+    .container-reviewlist
+      #review-list.box-reviewlist
+      .box-image-reviewlist
+        img.logo-image-reviewlist(src='../static/images/תמונת_ביקורות-removebg-preview.png', alt='This is an image of like')
+      .avg-review
+        | &#x5D1;&#x5D9;&#x5E7;&#x5D5;&#x5E8;&#x5EA; &#x5DE;&#x5DE;&#x5D5;&#x5E6;&#x5E2;&#x5EA;
+        br
+        span#avg-review.avg-number
+    .containerbuttons-2
+      .item1
+        a.dark-button(href='SearchResultsPage')  &#x5D7;&#x5D6;&#x5D5;&#x5E8; 
+      .item2
+        a.dark-button(href='LandingPage')  &#x5D4;&#x5EA;&#x5E0;&#x5EA;&#x5E7; 
